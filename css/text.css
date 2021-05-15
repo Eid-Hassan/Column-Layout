@@ -1,0 +1,434 @@
+/* Start Varibales */
+:root{
+    --main-color: #19c8fa;
+    --transparent-color: rab(15 116 143 / 70%);
+    --section-padding: 100px;
+}
+/* End Varibales */
+
+/* Start Global Ruls */
+html{scroll-behavior: smooth;}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* End Global Ruls */
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+@media (max-width:375px){
+    .container{
+        width: fit-content;
+        margin: 0px 150px;
+    }
+}
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+/******************************* Start Header ***************************/
+/******** Start Nav **********/
+header{
+    font-family: 'Raleway', sans-serif;
+}
+header nav .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+header nav .top .nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav .top .nav ul a{
+    text-decoration: none;
+}
+header nav .top .nav ul li{
+    padding: 15px;
+    color: hsl(243, 87%, 12%);
+}
+/******* End Nav ************/
+header .files{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 50px;
+}
+header .files .left{
+    width: 615px;
+    color: hsl(243, 87%, 12%);
+}
+header .files .left p{
+    margin: 30px 0;
+}
+header .files .left form{
+    display: flex;
+}
+header .files .left form input[type="email"]{
+    padding:20px 30px;
+    width: 300px;
+    outline: none;
+}
+header .files .left form input[type="submit"]{
+    padding: 20px 60px;
+    margin-left: 10px;
+    background: hsl(224, 93%, 58%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+header .files .image img{
+    width: 100%;
+}
+@media (max-width:375px){
+
+    header nav .top{
+        font-size: 50px;
+    }
+    header nav .top .logo img{
+        width: 400px;
+    }
+    header .files {
+        display: grid;
+    }
+    header .files .image img{
+        order: 1;
+    }
+    header .files .left{
+        order: 2;
+        font-size: 50px;
+        text-align: center;
+        width: 1300px;
+        margin: 20px auto;
+    }
+    header .files .left p{
+        width: 1000px;
+        margin: 100px  auto;
+    }
+    header .files .left form{
+        display: grid;
+        gap: 20px;
+    }
+    header .files .left form input[type="email"]{
+        order: 1;
+        width: 1200px;
+        padding: 60px;
+        font-size: 75px;
+        font-weight: bold;
+        margin: 20px auto;
+    }
+    header .files .left form input[type="submit"]{
+        order: 3;
+        width: 1200px;
+        padding: 60px;
+        font-size: 75px;
+        font-weight: bold;
+        margin: 50px auto;
+    }
+    header .files .left label{
+        display: none;
+    }
+}
+/****************************** End Header *****************************/
+
+
+/******************************* Start Stay *****************************/
+.background{
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+    padding-bottom: 200px;
+}
+.stay{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    gap: 150px;
+    margin-top: 200px;
+    padding: 50px;
+}
+.stay .left{
+    color: hsl(243, 87%, 12%);
+}
+.stay .left p{
+    width: 480px;
+    margin: 20px 0;
+}
+.stay .left a{
+    text-decoration: none;
+    color:  hsl(0, 0%, 75%);
+}
+.stay .left a::before{
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 1px;
+    background-color: hsl(0, 0%, 75%);
+    margin-top: 20px;
+}
+.stay .left .fylo{
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    margin-top: 75px;
+    box-shadow:10px 10px 25px -20px black
+}
+.stay .left .fylo p{
+    width: 325px;
+}
+.stay .left .fylo .portfolio{
+    display: flex;
+    align-items: center;
+}
+.stay .left .fylo .portfolio img{
+    border-radius: 50%;
+    width: 55px;
+}
+.stay .left .fylo .portfolio .cont{
+    margin-left: 15px;
+    line-height: 0.25;
+    margin-top: -25px;
+}
+.stay .left .fylo .portfolio .cont p{
+    font-weight: bold;
+}
+.stay .left .fylo .portfolio .cont span{
+    font-size: x-small;
+}
+.stay .image img{
+    width: 100%;
+}
+@media (max-width:375px){
+    .stay{
+        display: grid;
+    }
+    .stay .left {
+        order: 2;
+        font-size: 35px;
+        width: 1400px;
+    }
+    .stay .left h1{
+        margin: 50px 50px
+    }
+    .stay .left p{
+        width: 935px;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .stay .left a{
+        width: fit-content;
+        margin: 200px auto;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid hsl(0, 0%, 75%);
+        padding-bottom: 10px;
+    
+    }
+    .stay .left a img{
+        width: 50px;
+        margin-left: 15px;
+    }
+    .stay .left .fylo{
+        width: 1100px;
+        padding: 50px;
+        margin: 50px auto;
+    }
+    .stay .left .fylo img{
+        width: 50px;
+        margin: 20px 0;
+    }
+    .stay .left .fylo p {
+        width: 900px;
+    }
+    .stay .left .fylo .portfolio {
+        margin-top: 50px;
+    }
+    .stay .left .fylo .portfolio .cont {
+        line-height: 1;
+    }
+    .stay .left .fylo .portfolio img {
+        width: 300px;
+    }
+    .stay .left .fylo .portfolio .cont span {
+        font-size: 30px;
+    }
+    .stay .image img{
+        width: 75%;
+    }
+}
+/******************************* End Stay *****************************/
+
+
+
+
+/****************************** Start Early ***************************/
+.early-up{
+    display: flex;
+    background-color: hsl(238, 22%, 44%);
+    padding: 75px 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    gap: 150px;
+}
+.early-up .early{
+    width: 500px;
+}
+.early-up .early p{
+    margin-top: 15px;
+}
+.early-up .send form input[type="email"]{
+    width: 500px;
+    padding: 20px 30px;
+    outline: none;
+    border-radius: 5px;
+
+}
+.early-up .send form input[type="submit"]{
+    width: 250px;
+    padding: 20px 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+    background: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width:375px){
+    .early-up{
+        display: grid;
+        padding: 200px 0;
+    }
+    .early-up .early{
+        width: 74%;
+        font-size: 40px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .early-up .early p{
+        margin-top: 75px;
+        font-size: 50px;
+    }
+    .early-up .send{
+        margin: 20px 150px;
+        width: 100%;
+    }
+    .early-up .send form input[type="email"]{
+        width: 80%;
+        padding: 70px;
+        font-size: 50px;
+    }
+    .early-up .send form input[type="submit"]{
+        width: 80%;
+        padding: 70px;
+        font-size: 50px;
+    }
+    .early-up .send form label{
+        display: none;
+    }
+}
+/****************************** End Early ***************************/
+
+
+
+/****************************** Start Footer ***************************/
+footer{
+    background-color:  hsl(243, 87%, 12%);
+    padding: 100px  50px;
+    color: white;
+}
+footer .cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+footer .cont .one .phone, footer .cont .one .mail{
+    display: flex;
+    align-items: flex-start;
+}
+footer .cont .one .phone p, footer .cont .one .mail p{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+footer .cont .two ul{
+    list-style: none;
+    display: grid;
+    gap: 20px;
+}
+footer .cont .two ul a{
+    text-decoration: none;
+}
+footer .cont .two ul li{
+    color: white;
+    transition: 0.3s;
+}
+footer .cont .two ul li:hover{
+    color: hsl(224, 93%, 58%);
+}
+footer .cont .three ul{
+    display: grid;
+    list-style: none;
+    gap: 20px;
+}
+footer .cont .four img{
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 15px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+footer .cont .four img:hover{
+    cursor: pointer;
+    background-color: violet;
+}
+@media (max-width:375px){
+    footer{
+        padding: 150px;
+    }
+    footer img{
+        width: 500px;
+    }
+    footer .cont{
+        display: grid;
+        font-size: 50px;
+        align-items: center;
+    }
+    footer .cont .one{
+        margin: 100px 0;
+    }
+    footer .cont .one .phone p, footer .cont .one .mail p{
+        margin-left: 50px;
+    }
+    footer .cont .one .phone, footer .cont .one .mail {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    footer .cont .one .phone img, footer .cont .one .mail img{
+        width: 60px;
+    }
+    footer .cont .two ul {
+        display: grid;
+        gap: 50px;
+        margin-bottom: 150px;
+    }
+    footer .cont .three ul{
+        display: grid;
+        gap: 50px;
+        margin-bottom: 150px;
+    }
+    footer .cont .four{
+        display: flex;
+        gap: 50px;
+        margin: 100px 220px;
+    }
+    footer .cont .four img{
+        width: 130px;
+    }
+}
+/****************************** End Footer ***************************/
